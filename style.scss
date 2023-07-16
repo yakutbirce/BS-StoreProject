@@ -1,0 +1,166 @@
+@mixin hover {
+    transform: scale(1.1);
+    transition: ease 0.5s;
+    color: gray !important;
+    // !important css önceliğini öne geçiriyor. İLk önce çalışacak kod oluyor.
+  }
+  
+  .navbar {
+    //navbar
+    background: linear-gradient(
+      109.6deg,
+      rgb(0, 0, 0) 11.2%,
+      rgb(11, 132, 145) 91.1%
+    );
+  
+    &-brand {
+      //navbar-brand
+      b {
+        color: red;
+      }
+    }
+  
+    .nav-link {
+      &:hover {
+        @include hover;
+      }
+    }
+    /* &-navlink{//navbar + &-navlink = navbar-navlink
+  
+    } */
+  }
+  
+  /* MAIN */
+  .main {
+    button {
+      background-color: rgb(81, 81, 162);
+      color: white;
+      &:hover {
+        @include hover;
+        background-color: black;
+        color: white !important;
+      }
+    }
+  
+    .image-future img {
+      width: 100%;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  /* PRODUCT */
+  .product {
+    .card {
+      border: 0;
+    }
+  
+    img {
+      border-radius: 50%;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      padding: 0 15px;
+      margin-top: 10px;
+    }
+  }
+  
+  /* 
+   background: linear-gradient(
+          109.6deg,
+          rgb(0, 0, 0) 11.2%,
+          rgb(11, 132, 145) 91.1%
+        );
+  */
+  
+  .product {
+    background: linear-gradient(
+      109.6deg,
+      rgb(0, 0, 0) 11.2%,
+      rgb(11, 132, 145) 91.1%
+    ),
+      url(https://images.unsplash.com/photo-1530533718754-001d2668365a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJsdWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    padding: 20px;
+  
+    .card {
+      &:hover {
+        background: rgba(0, 0, 0, 0);
+        /* background: transparent; tamamen saydam yapar */
+        @include hover;
+        color: white !important;
+        transition: ease 0.8s;
+      }
+    }
+  }
+  
+  /* ALBUM */
+  .album {
+    &-card {
+      //album-card classı
+      &:hover {
+        p {
+          color: red;
+          display: block;
+        }
+      }
+  
+      p {
+        bottom: 20px;
+        left: 30px;
+        display: none;
+      }
+    }
+    img {
+      height: 200px;
+      width: 100%;
+      margin-bottom: 10px;
+      object-fit: cover;
+      border-radius: 20px;
+      &:hover {
+        opacity: 0.5;
+        transition: ease 0.8s;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  /* ABOUT */
+  .about {
+    .col-4 {
+      box-shadow: 3px 3px 5px rgba(232, 228, 228, 0.564) !important;
+  
+      i {
+        font-size: 25px;
+        background: linear-gradient(
+          109.6deg,
+          rgb(0, 0, 0) 11.2%,
+          rgb(11, 132, 145) 91.1%
+        );
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+      }
+    }
+  
+    .for-span {
+      font-size: 14px;
+    }
+  }
+  
+  /* FOOTER */
+  .footer {
+    background: linear-gradient(
+      109.6deg,
+      rgb(0, 0, 0) 11.2%,
+      rgb(11, 132, 145) 91.1%
+    );
+  
+    .list-unstyled {
+      i {
+        color: white;
+        &:hover {
+          @include hover;
+        }
+      }
+    }
+  }
