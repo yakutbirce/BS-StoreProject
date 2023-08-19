@@ -30,12 +30,14 @@ This project showcases an e-commerce store example developed using HTML, CSS (SC
 
 2. Experience Responsive Design: Explore how the page looks on different screen sizes to understand its responsive design.
 
-### `Screen`
-
-![Store Screenshot](img.png)
-
 ---
 
 ## `Deploy`
 
 The project is live and can be accessed from the following URL: [https://bootstrap-store-project.netlify.app/](https://bootstrap-store-project.netlify.app/).
+
+---
+
+### `Screen`
+
+![Store Screenshot](img.png)
