@@ -38,6 +38,12 @@ The project is live and can be accessed from the following URL: [https://bootstr
 
 ---
 
+## `Responsive Design Preview`
+
+![Alt text](responsive.png)
+
+---
+
 ### `Screen`
 
 ![Store Screenshot](img.png)
